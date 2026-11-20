@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Items</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="adminuser.css">
+</head>
+<body>
+    <!--Header -->
+ <div id="head">
+    <div id="lefthead">
+        <h1 id="header"> BackToYou</h1>
+        <br>
+        <h5 id="subhead">LOST & FOUND BANGLADESH</h5>
+     </div>
+
+        <div id="centerhead">
+        <h6 > THE COMMUNITY NOTICE BOARD BANGLADESH</h6>
+        </div>
+
+        <div id="righthead">
+          <p>ADMIN PORTAL</p>
+        </div>
+</div>
+
+<!-- main panel -->
+<div id="main">
+
+  <!-- left panel -->
+
+   <div id="left">
+    <p><u>Admin Workspace</u></p>
+    <div id="button">
+      <button id="btn1" >▦ Dashboard</button><br>
+      <button id="btn2" >♧Items</button><br>
+      <button id="btn3" class="active">Users</button><br>
+      <button id="btn4">Complaints</button> <br> 
+      <button id="btn5">Log Out</button>
+      <br>
+      <hr>
+     
+    </div>
+    
+    <div id="sidenote">
+        <p id="note1">
+          Lost something. <br>
+          Found a little <br>
+          hope.
+        </p>
+        <p id="note2">
+            A community service built on
+            <br>
+            care,
+            honesty and safe returns.
+        </p>
+        <hr>
+    </div>
+    
+
+    
+   </div>
+
+   
+   <!-- Right panel -->
+    <!-- Right up -->
+   <div id="right">
+
+    <div id="rightup">
+     <p>Admin Workspace / All Users</p>
+
+        
+      <hr>
+
+<!-- Right down  -->
+
+    </div>
+
+    <div id="rightdown"> 
+
+     <div id="box">
+
+      <div id="totaluserbox">
+        <p class="total">Total users</p>
+        <p id="usercount">1000</p>
+      </div>
+
+      <div id="suspendeduserbox">
+       <p class="total">Suspended users</p>
+        <p id="lostcount">1000</p>
+      </div>
+      
+      <div id="activeuserbox">
+        <p class="total">Active users</p>
+        <p id="foundcount">1000</p>
+      </div>
+
+
+     </div>
+<br><br>
+<!-- User Search Box -->
+           <div id="usersearchbar">
+            <input type="text" id=searchinput placeholder="🔍Search User by ID or Name">
+            <button id="searchuser">Search</button>
+            </div>
+<!-- User box -->
+ <br><br>
+     <div id="userbox">
+
+      <div id="users"></div>
+      <!-- user table head -->
+      <table id="usertablehead">
+        <tr>
+        <td><p>All Users</p></td>
+        <td><button id="adduserbtn">Add Users</button></td>
+       </tr>
+      </table>
+<!-- User table -->
+ <div id="usertablecontainer">
+       <table id="usertable">
+        <thead>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+        </thead>
+        <tbody id="usertablebody">
+          <tr id="userrow1">
+            <td>007</td>
+            <td>Mahir Daiyan</td>
+            <td>daiyanmahir7437@gmail.com</td>
+            <td>25 Oct</td>
+            <td id="userstatus">Active</td>
+
+            <td class="useraction">
+              <button class="userviewbtn">View</button>
+            </td>
+          </tr>
+        </tbody>
+
+       </table>
+       </div>
+     </div>
+
+    </div>
+   </div>
+   </div>
+
+
+<!-- Add User -->
+
+<!-- Add User popup -->
+<div id="adduserbackground">
+
+    <div id="adduserpopup">
+
+        <h2>Adding User</h2>
+
+        <div id="userform">
+            <form action="">
+
+                <label for="name">Name</label>
+                <span id="nameerr"></span>
+                <input type="text" id="username" placeholder="Enter Your Name">
+                
+                 <br>
+                <label for="email">Email</label>
+                <span id="emailerr"></span>
+                <input type="email" id="useremail" placeholder="Enter Your Email">
+                <br>
+                <label for="phone">Phone Number</label>
+                <span id="phoneerr"></span>
+                <input type="number" id="userphone" placeholder="Enter Your Phone Number">
+  
+            </form>
+        </div>
+
+        <button id="canceluser">Cancel</button>
+        <button id="adduser">Add</button>
+
+    </div>
+
+</div>
+
+ <!-- View User -->
+<div id="viewuserbackground">
+    <div id="viewuserpopup">
+
+                <h2>User Details</h2>
+
+        <div id="edituserform">
+            <form action="">
+
+                <label for="name">Name</label>
+                <span id="nameerr"></span>
+                <input type="text" id="editusername" readonly>
+                
+                 <br>
+                <label for="email">Email</label>
+                <span id="emailerr"></span>
+                <input type="email" id="edituseremail" readonly >
+                <br>
+                <label for="phone">Phone Number</label>
+                <span id="phoneerr"></span>
+                <input type="number" id="edituserphone"  readonly>
+  
+            </form>
+        </div>
+
+        <button id="edituser">Edit</button>
+        <button id="canceledituser">Cancel</button>
+        <button id="saveedituser">Save</button>
+        <button id="usersuspendbtn">Suspend</button>
+        
+    </div>
+</div>
+
+
+
+
+<!-- Remove popup -->
+<div id="popupbackground">
+
+    <div id="removeuserpopup">
+
+        <h2>Remove User?</h2>
+
+        <p>Are you sure you want to remove this User?</p>
+
+        <button id="cancelremove">Cancel</button>
+        <button id="confirmremove">Remove</button>
+
+    </div>
+
+</div>
+
+ <!-- Footer -->
+  <div id="foot">
+    <p>2026 BackToYou. A little care bring things home</p>
+  </div>
+    
+
+<!-- JS -->
+ <script src="adminuser.js"></script>
+</body>
+</html>

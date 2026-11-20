@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="admindashboard.css">
+</head>
+<body>
+    <!--Header -->
+ <div id="head">
+    <div id="lefthead">
+        <h1 id="header"> BackToYou</h1>
+        <br>
+        <h5 id="subhead">LOST & FOUND BANGLADESH</h5>
+     </div>
+
+        <div id="centerhead">
+        <h6 > THE COMMUNITY NOTICE BOARD BANGLADESH</h6>
+        </div>
+
+        <div id="righthead">
+          <p>ADMIN PORTAL</p>
+        </div>
+</div>
+
+<!-- main panel -->
+<div id="main">
+
+  <!-- left panel -->
+
+   <div id="left">
+    <p><u>Admin Workspace</u></p>
+    <div id="button">
+      <button id="btn1" class="active">▦ Dashboard</button><br>
+      <button id="btn2">♧Items</button><br>
+      <button id="btn3">Users</button><br>
+      <button id="btn4">Complaints</button> <br> 
+      <button id="btn5">Log Out</button>
+      <br>
+      <hr>
+     
+    </div>
+    
+    <div id="sidenote">
+        <p id="note1">
+          Lost something. <br>
+          Found a little <br>
+          hope.
+        </p>
+        <p id="note2">
+            A community service built on
+            <br>
+            care,
+            honesty and safe returns.
+        </p>
+        <hr>
+    </div>
+    
+
+    
+   </div>
+
+   
+   <!-- Right panel -->
+    <!-- Right up -->
+   <div id="right">
+
+    <div id="rightup">
+     <p>Admin Workspace / Dashboard</p>
+      <h1 >The community, at a glance.</h1>
+      <p>Good morning, Sir. Here is what needs your attention today.</p>
+        
+      <hr>
+
+<!-- Right down  -->
+
+    </div>
+
+    <div id="rightdown"> 
+
+     <div id="box">
+
+      <div id="userbox">
+        <p class="total">Total users</p>
+        <p id="usercount">1000</p>
+      </div>
+
+      <div id="lostbox">
+       <p class="total">Active lost reports</p>
+        <p id="lostcount">1000</p>
+      </div>
+      
+      <div id="foundbox">
+        <p class="total">Active found reports</p>
+        <p id="foundcount">1000</p>
+      </div>
+
+      <div id="unsolvedcomplaintbox">
+        <p class="total">Unsolved complaints</p>
+        <p id="unsolvedcomplaintcount">1000</p>
+      </div>
+
+     </div>
+<br><br>
+<!-- Item box -->
+     <div id="itembox">
+
+      <div id="item"></div>
+      <!-- item table head -->
+      <table id="itemtablehead">
+        <tr>
+        <td><p>Recent Items</p></td>
+        <td><button id="viewallitemsbtn">View All Items</button></td>
+       </tr>
+      </table>
+<!-- Item table -->
+ <div id="itemtablecontainer">
+       <table id="itemtable">
+        <thead>
+        <th>Item</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Status</th>
+        </thead>
+        <tbody id="itemtablebody">
+          <tr>
+            <td>Smartphone</td>
+            <td>Dhaka</td>
+            <td>25 Oct</td>
+            <td id="itemstatus">Found</td>
+          </tr>
+        </tbody>
+
+       </table>
+       </div>
+     </div>
+
+<!-- User box -->
+     <div id="userbox">
+
+       <div id="user"></div>
+      <table id="usertablehead">
+        <tr>
+        <td><p>Recent Users</p></td>
+        <td><button id="viewalluserbtn">View All Users</button></td>
+       </tr>
+      </table>
+<!-- User table -->
+ <div id="usertablecontainer">
+       <table id="usertable">
+        <thead>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Status</th>
+        </thead>
+        <tbody id="usertablebody">
+          <tr>
+            <td>01</td>
+            <td>Mahir Daiyan</td>
+            <td>daiyanmahir7437@gmail.com</td>
+            <td>25 Oct</td>
+            <td id="userstatus">Active</td>
+          </tr>
+        </tbody>
+
+       </table>
+       </div>
+      
+     </div>
+
+<!-- Complaint box -->
+
+    <div id="complaintbox">
+     
+           <div id="complaint"></div>
+      <table id="complainttablehead">
+        <tr>
+        <td><p>Recent Complaints</p></td>
+        <td><button id="viewallcomplaintbtn">View All Complaints</button></td>
+       </tr>
+      </table>
+<!-- Complain table -->
+ <div id="complainttablecontainer">
+       <table id="complainttable">
+        <thead>
+        <th>ID</th>
+        <th>From</th>
+        <th>Subject</th>
+        <th>Date</th>
+        <th>Status</th>
+        </thead>
+        <tbody id="complainttablebody">
+          <tr>
+            <td>01</td>
+            <td>Mahir Daiyan</td>
+            <td>Item not found yet</td>
+            <td>25 Oct</td>
+            <td id="complaintstatus">Resolved</td>
+          </tr>
+        </tbody>
+
+       </table>
+       </div>
+   </div>
+   </div>
+   </div>
+   </div>
+
+
+ <!-- Footer -->
+  <div id="foot">
+    <p>2026 BackToYou. A little care bring things home</p>
+  </div>
+    
+
+<!-- JS -->
+ <script src="admindashboard.js"></script>
+</body>
+</html>

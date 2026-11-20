@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    background-color:#FAF8EF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#righthead p{
+    font-size: 10px;
+    color: white;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+
+#left {
+    width: 15%;
+    background-color: #F4F0E6;
+    border: 1px solid rgb(125, 125, 125);
+    
+}
+#left >p{
+    color:rgb(58, 58, 58);
+    padding-left: 20px;
+    font-size: 15px;
+}
+#button button {
+    display: flex;
+    justify-content: left;
+    color: black;
+    width: 90%;
+    margin: auto;
+    background-color:  #F4F0E6 ;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 10px;
+    border-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    
+}
+
+#btn1:hover{
+background-color: #1D4D3F;
+color: white;
+}
+
+#btn2:hover{
+background-color: #1D4D3F;
+color: white;
+}
+
+#btn3:hover{
+background-color: #1D4D3F;
+color: white;
+}
+#btn4:hover {
+    background-color: #1D4D3F;
+    color: white;
+}
+#btn5:hover {
+    background-color: #1D4D3F;
+    color: white;
+}
+#btn1.active{
+    background-color: #1D4D3F;
+    color: white;
+}
+
+#note1{
+    color: #1f5a49;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+
+
+}
+#note2{
+     color: rgb(58, 58, 58);
+     font-family: 'Times New Roman', Times, serif;
+     padding-left: 20px;
+     font-size: 12px;
+     padding-bottom: 10px;
+}
+#logout{
+   margin-top: auto;
+   margin-bottom: 20px;
+}
+#left hr{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+
+
+#right{
+     flex:1;
+     background-color: #F4F0E6;
+     padding-left: 20px;
+     overflow-y: auto;
+}
+#rightup p{
+    padding: 0px;
+    font-size: 12px;;
+    margin-top: 17px;
+    margin-bottom: 0px;
+    
+
+}
+#rightup h1{
+    padding: 0;
+    margin: 0;
+}
+#rightup hr{
+
+    border: 1px solid black;
+}
+#box{
+    display: flex;
+    gap:8px;
+    justify-content: center;
+}
+#box div{
+    
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px gray;
+    border: 1px solid rgb(156, 156, 152);
+
+}
+.total{
+     color:rgb(58, 58, 58);
+     padding-left: 15px;
+     margin-bottom: 5px;
+}
+#usercount,#lostcount,#foundcount,#unsolvedcomplaintcount{
+     margin: 0;
+     color:black;
+     font-size: xx-large;
+     padding-left: 15px;
+}
+#itembox,#userbox,#complaintbox{
+    margin: 0;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px gray;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    border: 1px solid gray;
+    
+
+}
+#itembox >p{
+    padding-top: 20px;
+    display: inline;
+    
+}
+#viewallitemsbtn,#viewalluserbtn,#viewallcomplaintbtn{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1D4D3F;
+    width: 100px;
+    border-radius: 5px;
+    height: 40px;
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#viewallitemsbtn:hover{
+    background-color: white;
+    color:#1D4D3F;
+    border:1px solid #1D4D3F;
+}
+#viewalluserbtn:hover{
+
+    background-color: white;
+    color:#1D4D3F;
+    border:1px solid #1D4D3F;
+}
+#viewallcomplaintbtn:hover{
+    background-color: white;
+    color:#1D4D3F;
+    border:1px solid #1D4D3F;
+}
+
+#itemtablehead,#usertablehead,#complainttablehead{
+    width: 100%;
+}
+#itemtablehead td,#usertablehead td,#complainttablehead td{
+    width: 100%;
+}
+#itemtablecontainer,#usertablecontainer,#complainttablecontainer{
+    margin: 0;
+    padding: 0;
+    overflow: auto ;
+   
+}
+
+#itemtable,#usertable,#complainttable{
+    width: 100%;
+    border-spacing: 0;
+}
+#itemtable th,#usertable th,#complainttable th{
+    width: 20% ;
+    text-align: center;
+     padding: 10px;
+}
+#itemtable thead,#usertable thead,#complainttable thead{
+    background-color: #F4F0E6;
+    
+}
+#itemtable tr,#usertable tr,#complainttable tr{
+    text-align: center;
+    
+
+}
+#itemtable tr td ,#usertable tr td, #complainttable tr td{
+    padding: 5px;
+}
+#itemstatus{
+    /* If found */
+    background-color: rgb(186, 247, 186);
+    color: rgb(13, 66, 13);
+}
+#userstatus{
+    /* If found */
+    background-color: rgb(186, 247, 186);
+    color: rgb(13, 66, 13);
+}
+#complaintstatus{
+    /* If found */
+    background-color: rgb(186, 247, 186);
+    color: rgb(13, 66, 13);
+}
+
+#itemviewbtn,#itemremovebtn,#usersuspendbtn,#complaintviewbtn,#complaintresolvebtn{
+   background-color: white;
+   width: auto;
+   border-style: none;
+   border-radius: 2px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: large;
+}
+#itemviewbtn,#complaintviewbtn,#complaintresolvebtn{
+    border: 1px solid #1D4D3F;
+    color:#1D4D3F;
+ 
+}
+#itemviewbtn:hover{
+    background-color: #1D4D3F;
+    color: white;
+}
+#itemremovebtn{
+    border: 1px solid red;
+    color:red;
+ 
+}
+#itemremovebtn:hover{
+    background-color: red;
+    color: white;
+}
+#usersuspendbtn{
+    border: 1px solid #1D4D3F;
+    color:#1D4D3F;
+}
+#usersuspendbtn:hover{
+    background-color: #1D4D3F;
+    color: white;
+}
+#complaintviewbtn:hover{
+    background-color: #1D4D3F;
+    color: white;
+}
+#complaintresolvebtn:hover{
+    background-color: #1D4D3F;
+    color: white;
+}
+
+
+
