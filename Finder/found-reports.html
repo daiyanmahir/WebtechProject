@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Found Reports - BackToYou</title>
+    <link rel="stylesheet" href="finder.css">
+    <script src="finder.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>BackToYou</h1>
+    <p>Found Reports</p>
+</header>
+
+<nav>
+    <a href="finder-dashboard.html">Dashboard</a>
+    <a href="found-reports.html">Found Reports</a>
+    <a href="claim-verification.html">Claim Verification</a>
+    <a href="handover-appointments.html">Handover Appointments</a>
+    <a href="account-settings.html">Account Settings</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Found Item Reports</h2>
+
+    <div class="panel">
+        <h3>Create / Edit Found Report</h3>
+        <form id="reportForm">
+            <label>Item Name</label>
+            <input type="text" name="item_name">
+            <span id="errorItemName" class="error-msg">Please enter the item name.</span>
+
+            <label>Category</label>
+            <select name="category">
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Bags">Bags</option>
+                <option value="Documents">Documents</option>
+                <option value="Jewellery">Jewellery</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Other">Other</option>
+            </select>
+            <span id="errorCategory" class="error-msg">Please select a category.</span>
+
+            <label>Description</label>
+            <textarea name="description"></textarea>
+            <span id="errorDescription" class="error-msg">Please enter a description.</span>
+
+            <label>Found Location</label>
+            <input type="text" name="location">
+            <span id="errorLocation" class="error-msg">Please enter the found location.</span>
+
+            <label>Found Date</label>
+            <input type="date" name="found_date">
+            <span id="errorFoundDate" class="error-msg">Please select the found date.</span>
+
+            <label>Item Photo</label>
+            <input type="file" name="item_photo" accept="image/*">
+
+            <label>Availability</label>
+            <select name="availability">
+                <option value="Available">Available</option>
+                <option value="Unavailable">Unavailable</option>
+                <option value="Returned to Owner">Returned to Owner</option>
+            </select>
+
+            <button type="submit">Save Report</button>
+            <button type="button" class="secondary" id="cancelReportEdit">Cancel Edit</button>
+        </form>
+    </div>
+
+    <div class="panel">
+        <h3>My Found Reports</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Found Date</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="reportTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p>2026 BackToYou. A little care bring things home</p>
+</footer>
+
+</body>
+</html>

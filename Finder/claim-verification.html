@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Claim Verification - BackToYou</title>
+    <link rel="stylesheet" href="finder.css">
+    <script src="finder.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>BackToYou</h1>
+    <p>Claim Verifications</p>
+</header>
+
+<nav>
+    <a href="finder-dashboard.html">Dashboard</a>
+    <a href="found-reports.html">Found Reports</a>
+    <a href="claim-verification.html">Claim Verification</a>
+    <a href="handover-appointments.html">Handover Appointments</a>
+    <a href="account-settings.html">Account Settings</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Claim Verification</h2>
+
+    <div class="panel">
+        <h3>Review a Claim</h3>
+        <form id="claimForm">
+            <label>Found Item</label>
+            <select name="claim" id="claimItem">
+                <option value="">Select a found report</option>
+                <option value="Black Backpack">Black Backpack</option>
+                <option value="Samsung Galaxy Phone">Samsung Galaxy Phone</option>
+                <option value="Brown Leather Wallet">Brown Leather Wallet</option>
+                <option value="Student ID Card">Student ID Card</option>
+                <option value="Wireless Earbuds">Wireless Earbuds</option>
+            </select>
+            <span id="errorClaimItem" class="error-msg">Please select a found item.</span>
+
+            <label>Claimant Name</label>
+            <input type="text" name="claimant_name">
+            <span id="errorClaimantName" class="error-msg">Please enter the claimant's name.</span>
+
+            <label>Verification Notes</label>
+            <textarea name="verification_notes" placeholder="Write details about the verification"></textarea>
+
+            <label>Decision</label>
+            <select name="decision">
+                <option value="">Select Decision</option>
+                <option value="Approve">Approve</option>
+                <option value="Reject">Reject</option>
+                <option value="Request Additional Information">Request Additional Information</option>
+            </select>
+            <span id="errorDecision" class="error-msg">Please select a decision.</span>
+
+            <label>Additional Information</label>
+            <textarea name="additional_info" placeholder="Mention any additional information required"></textarea>
+
+            <button type="submit">Submit Decision</button>
+        </form>
+    </div>
+
+    <div class="panel">
+        <h3>Claim Records</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Claim ID</th>
+                    <th>Item</th>
+                    <th>Claimant</th>
+                    <th>Decision</th>
+                    <th>Verification Notes</th>
+                    <th>Additional Information</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="claimTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p>2026 BackToYou. A little care bring things home</p>
+</footer>
+
+</body>
+</html>

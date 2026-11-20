@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - BackToYou</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<!--Heading part -->
+ <div id="head">
+    <div id="lefthead">
+        <h1 id="header"> BackToYou</h1>
+        <br>
+        <h5 id="subhead">LOST & FOUND BANGLADESH</h5>
+     </div>
+
+        <div id="centerhead">
+        <h6 > THE COMMUNITY NOTICE BOARD BANGLADESH</h6>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="panel">
+        <h2 style="text-align: center;">Create an Account</h2>
+        <form action="login.html" method="post">
+            <label>Full Name</label>
+            <input type="text" name="full_name">
+
+            <label>Email Address</label>
+            <input type="email" name="email">
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone">
+
+            <label>Password</label>
+            <input type="password" name="password">
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password">
+
+            <label>Account Type</label>
+            <select name="role">
+                <option value="">Select Role</option>
+                <option value="finder">Finder</option>
+                <option value="owner">Owner</option>
+            </select>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <br>
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>BackToYou - Lost and Found Platform</p>
+</footer>
+
+</body>
+</html>
