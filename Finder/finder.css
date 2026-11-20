@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FAF8EF;
+    color: #303b35;
+}
+
+header {
+    background-color: #202B26;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    color: #d6ddd8;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+nav {
+    background-color: #e8e1d5;
+    padding: 0 30px;
+    border-bottom: 1px solid #d5cdbf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: #30483f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 20px;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #315b49;
+    color: white;
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+h2 {
+    color: #263b33;
+    margin-bottom: 15px;
+}
+
+.panel {
+    background-color: #fffdf8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e4ddd1;
+    border-radius: 4px;
+}
+
+.panel h3 {
+    color: #30483f;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d5cfc4;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.radio-option {
+    margin-top: 5px;
+}
+
+/* Error Message Styling */
+.error-msg {
+    color: #a34e43;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    display: none;
+}
+
+button {
+    background-color: #315b49;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #244536;
+}
+
+button.secondary {
+    background-color: #8a8b79;
+}
+
+button.secondary:hover {
+    background-color: #717260;
+}
+
+button.danger {
+    background-color: #a34e43;
+}
+
+button.danger:hover {
+    background-color: #813a32;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #e2dbcf;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #eae4d9;
+    color: #30483f;
+}
+
+tr:hover {
+    background-color: #f7f3eb;
+}
+
+footer {
+    background-color:  #202B26;
+    color:white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.panel hr {
+    border: none;
+    border-top: 1px solid #e4ddd1;
+    margin: 15px 0;
+}

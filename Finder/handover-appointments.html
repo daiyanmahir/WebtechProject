@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handover Appointments - BackToYou</title>
+    <link rel="stylesheet" href="finder.css">
+    <script src="finder.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>BackToYou</h1>
+    <p>Handover Appointments</p>
+</header>
+
+<nav>
+    <a href="finder-dashboard.html">Dashboard</a>
+    <a href="found-reports.html">Found Reports</a>
+    <a href="claim-verification.html">Claim Verification</a>
+    <a href="handover-appointments.html">Handover Appointments</a>
+    <a href="account-settings.html">Account Settings</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Handover Appointments</h2>
+
+    <div class="panel">
+        <h3>Schedule / Edit Appointment</h3>
+        <form id="appointmentForm">
+            <label>Approved Claim</label>
+            <select name="claim" id="appointmentClaim">
+                <option value="">Select an approved claim</option>
+                <option value="C-1">C-1 - Black Backpack</option>
+                <option value="C-2">C-2 - Samsung Galaxy Phone</option>
+                <option value="C-3">C-3 - Brown Leather Wallet</option>
+            </select>
+            <span id="errorApptClaim" class="error-msg">Please select an approved claim.</span>
+
+            <label>Date</label>
+            <input type="date" name="date">
+            <span id="errorApptDate" class="error-msg">Please select a date.</span>
+
+            <label>Time</label>
+            <input type="time" name="time">
+            <span id="errorApptTime" class="error-msg">Please select a time.</span>
+
+            <label>Location</label>
+            <input type="text" name="location">
+            <span id="errorApptLocation" class="error-msg">Please enter a location.</span>
+
+            <label>Meeting Notes</label>
+            <textarea name="meeting_notes"></textarea>
+
+            <label>Appointment Status</label>
+            <select name="status">
+                <option value="">Select Status</option>
+                <option value="Scheduled">Scheduled</option>
+                <option value="Rescheduled">Rescheduled</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <span id="errorApptStatus" class="error-msg">Please select a status.</span>
+
+            <button type="submit">Save Appointment</button>
+            <button type="button" class="secondary" id="cancelAppointmentEdit">Cancel Edit</button>
+        </form>
+    </div>
+
+    <div class="panel">
+        <h3>Appointment Records</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Item</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Return Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="appointmentTable"></tbody>
+        </table>
+    </div>
+
+    <div class="panel">
+        <h3>Record Item Return</h3>
+        <form id="returnForm">
+            <label>Appointment</label>
+            <select name="appointment" id="returnAppointment">
+                <option value="">Select an appointment</option>
+            </select>
+            <span id="errorReturnAppointment" class="error-msg">Please select an appointment.</span>
+
+            <label>Was the Item Returned?</label>
+            <div class="radio-option">
+                <input type="radio" name="returned" value="Yes">
+                <span>Yes</span>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="returned" value="No">
+                <span>No</span>
+            </div>
+            <span id="errorReturnStatus" class="error-msg">Please select whether the item was returned.</span>
+
+            <label>Return Notes</label>
+            <textarea name="return_notes" placeholder="Write details about the handover"></textarea>
+
+            <button type="submit">Record Return</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>2026 BackToYou. A little care bring things home</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Settings - BackToYou</title>
+    <link rel="stylesheet" href="finder.css">
+    <script src="finder.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>BackToYou</h1>
+    <p>Account Settings</p>
+</header>
+
+<nav>
+    <a href="finder-dashboard.html">Dashboard</a>
+    <a href="found-reports.html">Found Reports</a>
+    <a href="claim-verification.html">Claim Verification</a>
+    <a href="handover-appointments.html">Handover Appointments</a>
+    <a href="account-settings.html">Account Settings</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Account Settings</h2>
+
+    <div class="panel">
+        <h3>Edit Profile</h3>
+        <form id="profileForm" onsubmit="event.preventDefault(); alert('Profile saved successfully!');">
+            <label>Full Name</label>
+            <input type="text" name="full_name">
+
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone">
+
+            <label>Profile Picture</label>
+            <input type="file" name="profile_picture" accept="image/*">
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+
+    <div class="panel">
+        <h3>Change Password</h3>
+        <form id="passwordForm" onsubmit="event.preventDefault(); alert('Password changed successfully!');">
+            <label>Current Password</label>
+            <input type="password" name="current_password">
+
+            <label>New Password</label>
+            <input type="password" name="new_password">
+
+            <label>Confirm New Password</label>
+            <input type="password" name="confirm_password">
+
+            <button type="submit">Change Password</button>
+        </form>
+    </div>
+
+    <div class="panel">
+        <h3>Delete Account</h3>
+        <form id="deleteAccountForm" onsubmit="event.preventDefault(); confirm('Are you sure you want to delete your account?');">
+            <label>Enter Password</label>
+            <input type="password" name="password">
+
+            <button type="submit" class="danger">Delete Account</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>2026 BackToYou. A little care bring things home</p>
+</footer>
+
+</body>
+</html>
