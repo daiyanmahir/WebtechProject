@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Items</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="admincomplaint.css">
+</head>
+<body>
+    <!--Header -->
+ <div id="head">
+    <div id="lefthead">
+        <h1 id="header"> BackToYou</h1>
+        <br>
+        <h5 id="subhead">LOST & FOUND BANGLADESH</h5>
+     </div>
+
+        <div id="centerhead">
+        <h6 > THE COMMUNITY NOTICE BOARD BANGLADESH</h6>
+        </div>
+
+        <div id="righthead">
+          <p>ADMIN PORTAL</p>
+        </div>
+</div>
+
+<!-- main panel -->
+<div id="main">
+
+  <!-- left panel -->
+
+   <div id="left">
+    <p><u>Admin Workspace</u></p>
+    <div id="button">
+      <button id="btn1" >▦ Dashboard</button><br>
+      <button id="btn2">♧Items</button><br>
+      <button id="btn3">Users</button><br>
+      <button id="btn4" class="active">Complaints</button> <br> 
+      <button id="btn5">Log Out</button>
+      <br>
+      <hr>
+     
+    </div>
+    
+    <div id="sidenote">
+        <p id="note1">
+          Lost something. <br>
+          Found a little <br>
+          hope.
+        </p>
+        <p id="note2">
+            A community service built on
+            <br>
+            care,
+            honesty and safe returns.
+        </p>
+        <hr>
+    </div>
+    
+
+    
+   </div>
+
+   
+   <!-- Right panel -->
+    <!-- Right up -->
+   <div id="right">
+
+    <div id="rightup">
+     <p>Admin Workspace / All Complaints</p>
+
+      <hr>
+
+<!-- Right down  -->
+
+    </div>
+
+    <div id="rightdown"> 
+
+     <div id="box">
+
+      <div id="totalcomplaintbox">
+        <p class="total">Total Complaints</p>
+        <p id="complaintcount">1000</p>
+      </div>
+
+      <div id="pendingbox">
+       <p class="total">Pending</p>
+        <p id="pendingcount">1000</p>
+      </div>
+      
+      <div id="resolvedbox">
+        <p class="total">Resolved</p>
+        <p id="resolvedcount">1000</p>
+      </div>
+
+     </div>
+<br><br>
+
+
+<!-- Complaint Search Box -->
+           <div id="complaintsearchbar">
+            <input type="text" id=searchinput placeholder="🔍Search by User or ID or Subject">
+            <button id="searchcomplaint">Search</button>
+            </div>
+<!-- Complaint box -->
+ <br><br>
+     <div id="complaintbox">
+
+      <div id="complaint"></div>
+      <!-- complaint table head -->
+      <table id="complainttablehead">
+        <tr>
+        <td><p>All Complaints</p></td>
+        <td><button id="addcomplaintbtn">Add Complaint</button></td>
+       </tr>
+      </table>
+<!-- complaint table -->
+ <div id="complainttablecontainer">
+       <table id="complainttable">
+        <thead>
+        <th>ID</th>
+        <th>From</th>
+        <th>Subject</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+        </thead>
+        <tbody id="complainttablebody">
+          <tr id="complaintrow1">
+            <td>0120</td>
+            <td>ShahRukh Khan</td>
+            <td>Fake item</td>
+            <td>20 Oct 2026</td>
+            <td id="complaintstatus">Pending</td>
+
+            <td class="complaintaction">
+              <button class="complaintviewbtn">View</button>
+            </td>
+          </tr>
+        </tbody>
+
+       </table>
+       </div>
+     </div>
+
+    </div>
+   </div>
+   </div>
+
+
+<!-- Add Complaint -->
+
+<!-- Add Complaint popup -->
+<div id="addcomplaintbackground">
+
+    <div id="addcomplaintpopup">
+
+        <h2>Adding Complaint</h2>
+
+        <div id="complaintform">
+            <form action="">
+
+                <label for="complaintusername">From(Name)</label>
+                <span id="complaintusernameerr"></span>
+                <input type="text" id="complaintusername">
+                
+
+
+                <label for="subject">Subject</label>
+                <span id="subjecterr"></span>
+                <textarea id="complaintsubject"></textarea>
+                
+                <label for="complaintdate">Date</label>
+                <span id="complaintdateerr"></span>
+                <input type="date" id="complaintdate">
+                
+
+                <label for="complaintimage">Image(If available)</label>
+                <span id="complaintimageerr"></span>
+                <input type="file" id="complaintimage">
+              
+
+            </form>
+        </div>
+        
+        <button id="cancelcomplaint">Cancel</button>
+        <button id="addcomplaint">Add</button>
+
+    </div>
+
+</div>
+
+ <!-- View complaint -->
+<div id="viewcomplaintbackground">
+    <div id="viewcomplaintpopup">
+
+                <h2>Complaint Details</h2>
+
+       
+        <div id="viewcomplaintform">
+            <form action="">
+
+                <label for="viewcomplaintusername">From(Name)</label>
+                <span id="viewcomplaintusernameerr"></span>
+                <input type="text" id="viewcomplaintusername" readonly>
+                
+
+
+                <label for="viewsubject">Subject</label>
+                <span id="viewsubjecterr"></span>
+                <textarea id="viewcomplaintsubject" readonly></textarea>
+                
+                <label for="viewcomplaintdate">Date</label>
+                <span id="viewcomplaintdateerr"></span>
+                <input type="date" id="viewcomplaintdate" readonly>
+                
+
+                <label for="viewcomplaintimage">Image(If available)</label>
+                <span id="complaintimageerr"></span>
+                <br>
+                <img src="" alt="" width="60" height="60">
+              
+
+            </form>
+        </div>
+
+        <button id="resolvecomplaint">Resolve</button>
+        <button id="cancelresolvecomplaint">Cancel</button>
+        <button class="complaintremovebtn">Remove</button>
+        
+    </div>
+</div>
+
+
+
+
+<!-- Remove popup -->
+<div id="popupbackground">
+
+    <div id="removecomplaintpopup">
+
+        <h2>Remove Complaint?</h2>
+
+        <p>Are you sure you want to remove this complaint?</p>
+
+        <button id="cancelremove">Cancel</button>
+        <button id="confirmremove">Remove</button>
+
+    </div>
+
+</div>
+
+ <!-- Footer -->
+  <div id="foot">
+    <p>2026 BackToYou. A little care bring things home</p>
+  </div>
+    
+
+<!-- JS -->
+ <script src="admincomplaint.js"></script>
+</body>
+</html>
